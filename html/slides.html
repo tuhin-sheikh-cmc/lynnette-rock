@@ -6,10 +6,10 @@
   <title>Slides</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-slate-800">
   <main class="flex items-center justify-center">
 
-    <div class="gallery border-2 rounded mx-auto m-5 bg-white w-md md:w-2xl">
+    <div class="gallery border-2 rounded-xl mx-auto m-5 bg-white/90 w-md md:w-2xl">
         <div class="top flex p-2 border-b select-none">
           <div class="heading text-gray-800 w-full pl-3 font-semibold my-auto"></div>
           <div class="buttons ml-auto flex text-gray-600 mr-1">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="content-area w-full h-96 overflow-hidden">
-          <div class="platform shadow-xl h-full flex">
+          <div class="platform relative transition-right duration-[0.3s] shadow-xl h-full flex">
             <!-- frame start -->
             <div class="each-frame border-box flex-none w-full h-full" title="Tiger"> <!-- title shows in top -->
                 <!-- this is full editable area -->
@@ -86,11 +86,11 @@
       </div>
   </main>
   <style>
-    .platform{
+    /*.platform{
         position: relative;
         transition:right 0.3s;
-    }
-    .body{background-color:white !important;}
+    }*/
+    /*.body{background-color:white !important;}*/
   </style>
   <script>
     function gallery(){
